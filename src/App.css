@@ -1,38 +1,338 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+html{
+  overflow-x:hidden ;
+}
+body{
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+  overflow-x:hidden ;
+  width: 100vw;
+  height: 100vh;
+}
+a{
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+.App{
+  overflow-x:hidden ;
+  justify-content: center;
+  /* position: absolute; */
+/* left: 8%;
+right: 5%; */
+}
+.nav-main{
+  background-color: white;
+  box-shadow:5px 5px 0.5;
+  /* position: fixed; */
+  top: 5%;
+  width: 100%;
+  height: 10%;
+}
+
+.nav-font{
+  font-size: 11px;
+  color: black;
+  font-weight:bold;
+position: relative;
+right: 50px;
+}
+
+.alert-text{
+  position: relative;
+  bottom: 10px;
+}
+
+.nav-logo{
+  position: relative;
+  left: 10%;
+  margin-bottom: 20px;
+
+}
+
+.home-container{
+  position: relative;
+  overflow: hidden;
+}
+.home-img{
+  position: relative;
+  right: 2%;
+  margin:-20px 40px 40px 0;
+}
+
+.home-img{
+
+  height: 400px;
+  width: 480px;
+  
+}
+
+.heading{
+  font-size:50px;
+  font-display:block;
+  font-weight:700;
+  line-height: 90px;
+  transform: scale(2);
+}
+
+.f-col{
+  position: relative;
+  left: 10%;
+  margin-top:3rem; 
+ 
+  /* margin-left: 7rem; */
+
+}
+
+.sale{
+  font-size: 40px;
+ padding: 5px 10px 0 10px;
+  background-color: #965b3d;
+  color: white;
+  font-family:sans-serif ;
+  font-weight: 600;
+}
+
+.offper{
+  font-size: 80px;
+  color:  #965b3d;
+  font-weight: 600;
+}
+
+.dis-text{
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+}
+
+.home-btn{
+  margin-top: 10px;
+  border: 1px solid #016D79;
+  padding: 10px 20px;
+  width: 140px;
+  border-radius: 0;
+  color: #016D79;
+  font-weight:700;
+  font-size: 15px;
+}
+
+.home-btn:hover{
+  background-color: #016D79;
+  color: white;
+  transition: ease-in 0.5s;
+}
+.shop-heading{
+  margin: auto;
+  text-align: center;
+}
+/* .shop-row{
+  position: relative;
+text-align: center;
+display: flex;
+flex-wrap: wrap;
+ justify-content: center;
+
+} */
+
+
+.shop-center{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shop-images{
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+.pro-btn{
+  background-color:white;
+  padding:5px 0 5px 2px;
+  text-align: center;
+position: relative;
+left:3rem;
+bottom: 1rem;
+font-size: 15x;
+width: 140px;
+box-shadow: 2px 2px 5px ;
+} 
+
+.shop-images:hover .pro-btn{
+  background-color: #016D79;
+ transition: ease-out 0.5s;
+ /* transform: scale(1.2); */
+  bottom: 3rem;
+ cursor: pointer;
+
+}
+.arrival-center{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.arriveimages{
+  width:"200px";
+    height:"250px";
+    margin-top:"85px";
+    position:"relative";
+    display:'flex';
+    flex-wrap:"wrap";
+  
+}
+.arrive-row{
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+ 
+}
+
+/* Products section here */
+.dropitems{
+  text-decoration: none;
+  list-style: none;
+  margin: 2px ;
+  position: relative;
+  left: 40px;
+}
+.bannerimg {
+  width: 100%;
+  max-width: 100%;
+display: flex;
+flex-wrap: wrap;
+}
+.product-row{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+justify-content: center;
+text-align: center;
+  height: 100%;
+}
+.category-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer{
+  position: relative;
+  top: 20%;
+}
+
+
+@media only screen and (max-width: 1050px) {
+
+  body{
+    background-color: #016D79;
+  }
+  .home-btn{
+    color:white;
+    border: 1px solid white;
+  }
+  .nav-font{
+    position: relative;
+    left: 10%;
+  }
+.home-img{
+  margin: 2px;
+}
+.f-col{
+  left: 2%;
+}
+
+.shop-row{
+  display: flex;
+  justify-content: center;
+}
+
+.arrive-card {
+  width: 200px;
+}
+.product-row{
+  display: flex;
+  width: 80%;
+  /* margin: 0; */
+}
+
+
+}
+
+
+@media only screen and (max-width: 858px) {
+
+.home-container{
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.shop-center{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+   text-align: center;
+   flex-wrap: wrap;
+  margin-left: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.shop-images{
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  right: 50%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pro-btn{
+  background-color:white;
+  text-align: center;
+position: relative;
+left:3rem;
+bottom: 1rem;
+font-size: 10x;
+width: 100px;
+box-shadow: 2px 2px 5px ;
+} 
+
+}
+
+@media only screen and (max-width: 655px) {
+
+
+
+  .shop-center{
+    display: flex;
+    justify-content: center;
+    position: relative;
+  right: 5%;
   }
-  to {
-    transform: rotate(360deg);
+
+
+}
+
+
+@media only screen and (max-width: 378px) {
+
+  .shop-center{
+    display: flex;
+    justify-content: center;
+    position: relative;
+  right: 20%;
   }
+.shop-heading{
+  font-size: 25px;
+}
+.home-container{
+  font-size: 25px;
+}
 }
